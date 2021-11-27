@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,400;0,500;0,600;0,700;1,300&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito+Sans:wght@200;300;400;600&family=Open+Sans+Condensed:ital,wght@0,300;1,300&family=Source+Sans+Pro:wght@200;400;600;700;900&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url(./technology/background-technology-desktop.jpg);
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Infant', serif;
+}
+
+nav {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brandtitle {
+    margin-left: 3rem;
+}
+
+.brandtitle img {
+    border-radius: 50%;
+}
+
+.navbars {
+    margin-right: 0;
+    width: 55%;
+}
+
+.navbars ul {
+    display: flex;
+    /* border: 2px solid rgba(183, 183, 187, 0.1); */
+    padding: 0.5rem 1.5rem;
+    background-color: rgba(183, 183, 187, 0.2);
+}
+
+.navbars ul li {
+    list-style: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.navbars ul li a {
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    margin-bottom: -0.5rem;
+    color: rgb(198, 198, 212);
+    text-transform: uppercase;
+    display: block;
+    transition: 0.6s ease-out;
+}
+
+.navbars ul li a:hover {
+    background-color: rgba(211, 204, 211, 0.3);
+}
+
+.navbars ul li a .num {
+    color: white;
+}
+
+.navbars li .active {
+    border-bottom: 2px solid white;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 2.5rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 31px;
+    width: 40px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #d0d5fb;
+    border-radius: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8rem;
+}
+
+.left {
+    width: 60%;
+}
+
+.left .list {
+    display: flex;
+    margin-top: 4rem;
+}
+
+.left h2 {
+    font-size: 22px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    margin-top: -5rem;
+    margin-left: 10rem;
+    color: white;
+    /* border: 2px solid sienna; */
+}
+
+.left h2 span {
+    color: rgba(183, 183, 187, 0.5);
+    padding-right: 1rem;
+}
+
+.list {
+    margin-left: 7.5rem;
+}
+
+.list ul {
+    display: block;
+    margin-top: 0.5rem;
+} 
+
+.list ul li {
+    list-style: none;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: -3rem;
+    padding-left: -1rem;
+    border: 2px solid rgba(183, 183, 187, 0.5);
+    border-radius: 50%;
+    position: relative;
+    top: -1rem;
+    width: 5rem;
+    height: 5rem;
+    transition: all 1s;
+}
+
+.list ul li:hover {
+    transform: scale(1.1);
+}
+
+.list ul li a {
+    size: 1rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+    padding-left: 2rem;
+    position: relative;
+    top: 0.5rem;
+}
+
+.act {
+    background: #303a49;
+}
+
+.yoyo {
+    color: #e3e7f0;
+    margin-top: -2rem;
+    margin-left: 4rem;
+}
+
+.yoyo h3 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #868a93;
+}
+
+.yoyo h1 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 32px;
+}
+
+.yoyo p {
+    word-wrap: break-word;
+    margin-right: 12rem;
+    /* letter-spacing: 0.2px; */
+    line-height: 24px;
+    color: #868a93;
+}
+
+.right {
+    width: 40%;
+}
+
+.right img {
+    width: 380px;
+    height: 390px;
+    margin-top: -4rem;
+    margin-left: 12rem;
+}
+
+@media (max-width: 1030px) {
+    body {
+        background-image: url(./technology/background-technology-tablet.jpg) bottom 1050px left 1050px, right 1050px;
+        background-repeat: repeat;
+        background-color: #151424;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbars {
+        margin-right: -0.2rem;
+        width: 70%;
+    }
+
+    .navbars ul {
+        display: flex;
+        /* border: 2px solid rgba(183, 183, 187, 0.1); */
+        padding: 0.5rem 1.5rem;
+        background-color: rgba(183, 183, 187, 0.2);
+    }
+
+    .navbars ul li a .num {
+        display: none;
+        /* color: white; */
+    }
+
+    .navbars ul li {
+        list-style: none;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .content {
+        display: block;
+    }
+
+    .yoyo h1 {
+        text-transform: uppercase;
+        font-weight: lighter;
+        font-size: 32px;
+        margin-right: -10rem;
+    }
+
+    .yoyo p {
+        word-wrap: break-word;
+        margin-right: -8rem;
+        /* letter-spacing: 0.2px; */
+        line-height: 24px;
+    }
+
+    .right img {
+        width: 380px;
+        height: 390px;
+        margin-top: 2rem;
+        margin-left: 12rem;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        background-image: url(./technology/background-technology-tablet.jpg);
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbars {
+        margin-right: -0.2rem;
+        width: 70%;
+    }
+
+    .navbars ul {
+        display: flex;
+        /* border: 2px solid rgba(183, 183, 187, 0.1); */
+        padding: 0.5rem 1.5rem;
+        background-color: rgba(183, 183, 187, 0.2);
+    }
+
+    .navbars ul li a .num {
+        display: none;
+        /* color: white; */
+    }
+
+    .navbars ul li {
+        list-style: none;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .content {
+        display: block;
+    }
+
+    .yoyo h1 {
+        text-transform: uppercase;
+        font-weight: lighter;
+        font-size: 32px;
+        margin-right: -10rem;
+    }
+
+    .yoyo p {
+        word-wrap: break-word;
+        margin-right: -8rem;
+        /* letter-spacing: 0.2px; */
+        line-height: 24px;
+    }
+
+    .right img {
+        width: 380px;
+        height: 390px;
+        margin-top: 2rem;
+        margin-left: 12rem;
+    }
+}
+
+@media (max-width: 420px) {
+    body {
+        object-fit: cover;
+        background-color: #0b0e17;
+        background-image: url(./technology/background-technology-mobile.jpg) left 1200px, right 800px;
+        background-repeat: no-repeat;
+        background-size: fill;
+        margin-top: 2rem;
+        margin-bottom: 13rem;
+        margin-right: 19rem;
+        height: 90vh;
+        padding: 0;
+    }
+
+    .navbars {
+        display: none;
+        width: 100%;
+    }
+
+    .navbars ul {
+        flex-direction: column;
+    }
+
+    .navbars ul li a {
+        padding: 1rem;
+    }
+
+    .navbars.active {
+        display: flex;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .content {
+        display: block;
+        margin-left: -1rem;
+    }
+
+    .left {
+        margin-left: 3rem;
+        margin-top: -1rem;
+    }
+
+    .left h2 {
+        font-size: 20px;
+        font-weight: lighter;
+        text-transform: uppercase;
+        margin-top: 2rem;
+        margin-left: 2.5rem;
+        margin-right: -18rem;
+        margin-bottom: 0px;
+        color: #868a93;
+    }
+
+    .list {
+        margin-left: -4rem;
+    }
+
+    .yoyo {
+        margin-left: 1rem;
+    }
+
+    .yoyo h3 {
+        margin-right: -12rem;
+        font-size: 12px;
+    }
+
+    .yoyo h1 {
+        margin-right: -18rem;
+    }
+
+    .left p {
+        margin-left: 0rem;
+        margin-right: -16rem;
+        text-align: center;
+    }
+
+    .right {
+        position: relative;
+        text-align: center;
+        margin-top: -3rem;
+        margin-left: -6rem;
+        color: #090a0e;
+        /* padding-top: 2rem; */
+        width: 50%;
+    }
+}

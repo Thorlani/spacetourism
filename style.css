@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,400;0,500;0,600;0,700;1,300&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito+Sans:wght@200;300;400;600&family=Open+Sans+Condensed:ital,wght@0,300;1,300&family=Source+Sans+Pro:wght@200;400;600;700;900&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url(./home/background-home-desktop.jpg);
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Infant', serif;
+}
+
+nav {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brandtitle {
+    margin-left: 3rem;
+}
+
+.brandtitle img {
+    border-radius: 50%;
+}
+
+.navbars {
+    margin-right: 0;
+    width: 55%;
+}
+
+.navbars ul {
+    display: flex;
+    /* border: 2px solid rgba(183, 183, 187, 0.1); */
+    padding: 0.5rem 1.5rem;
+    background-color: rgba(183, 183, 187, 0.2);
+}
+
+.navbars ul li {
+    list-style: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.navbars ul li a {
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    margin-bottom: -0.5rem;
+    color: rgb(198, 198, 212);
+    text-transform: uppercase;
+    display: block;
+    transition: 0.6s ease-out;
+}
+
+.navbars ul li a:hover {
+    background-color: rgba(211, 204, 211, 0.3);
+}
+
+.navbars ul li a .num {
+    color: white;
+}
+
+.navbars li .active {
+    border-bottom: 2px solid white;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 2.5rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 31px;
+    width: 40px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #d0d5fb;
+    border-radius: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8rem;
+}
+
+.left {
+    width: 50%;
+    margin-left: 10rem;
+}
+
+.left h2 {
+    font-size: 22px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    color: #868a93;
+}
+
+.left span {
+    font-size: 120px;
+    text-transform: uppercase;
+    margin-top: 0px;
+    color: white;
+}
+
+.left p {
+    font-weight: lighter;
+    word-wrap: break-word;
+    line-height: 24px;
+    margin-right: 1rem;
+    text-align: justify;
+    color: #868a93;
+}
+
+.right {
+    position: relative;
+    text-align: center;
+    margin-top: 3rem;
+    margin-left: 25rem;
+    color: #090a0e;
+    padding-top: 2rem;
+    width: 50%;
+}
+
+.right h2 {
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding-top: 5rem;
+    transition: all 1s;
+}
+
+.right h2:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1030px) {
+    body {
+        background-image: url(./home/background-home-tablet.jpg) left 1030px, right 1030px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbars {
+        margin-right: -0.2rem;
+        width: 70%;
+    }
+
+    .navbars ul {
+        display: flex;
+        /* border: 2px solid rgba(183, 183, 187, 0.1); */
+        padding: 0.5rem 1.5rem;
+        background-color: rgba(183, 183, 187, 0.2);
+    }
+
+    .navbars ul li a .num {
+        display: none;
+        /* color: white; */
+    }
+
+    .navbars ul li {
+        list-style: none;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .content {
+        display: block;
+        margin-left: 8rem;
+    }
+
+    .left h2 {
+        font-size: 20px;
+        font-weight: lighter;
+        text-transform: uppercase;
+        margin-left: 2.5rem;
+        margin-bottom: 0px;
+        color: #868a93;
+    }
+
+    .left p {
+        margin-left: 2rem;
+        text-align: center;
+    }
+
+    .right {
+        position: relative;
+        text-align: center;
+        margin-top: 6rem;
+        margin-left: 15rem;
+        color: #090a0e;
+        padding-top: 2rem;
+        width: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        background-image: url(./home/background-home-tablet.jpg);
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbars {
+        margin-right: -0.2rem;
+        width: 70%;
+    }
+
+    .navbars ul {
+        display: flex;
+        /* border: 2px solid rgba(183, 183, 187, 0.1); */
+        padding: 0.5rem 1.5rem;
+        background-color: rgba(183, 183, 187, 0.2);
+    }
+
+    .navbars ul li a .num {
+        display: none;
+        /* color: white; */
+    }
+
+    .navbars ul li {
+        list-style: none;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .content {
+        display: block;
+        margin-left: 8rem;
+    }
+
+    .left h2 {
+        font-size: 20px;
+        font-weight: lighter;
+        text-transform: uppercase;
+        margin-left: 2.5rem;
+        margin-bottom: 0px;
+        color: #868a93;
+    }
+
+    .left p {
+        margin-left: 2rem;
+        text-align: center;
+    }
+
+    .right {
+        position: relative;
+        text-align: center;
+        margin-top: 6rem;
+        margin-left: 15rem;
+        color: #090a0e;
+        padding-top: 2rem;
+        width: 50%;
+    }
+}
+
+@media (max-width: 420px) {
+    body {
+        object-fit: cover;
+        background-color: #0a2342;
+        background-image: url(./home/background-home-mobile.jpg) left 1200px, right 800px;
+        background-repeat: no-repeat;
+        background-size: fill;
+        margin-top: 2rem;
+        margin-bottom: 13rem;
+        margin-right: 19rem;
+        height: 90vh;
+        padding: 0;
+    }
+
+    .navbars {
+        display: none;
+        width: 100%;
+    }
+
+    .navbars ul {
+        flex-direction: column;
+    }
+
+    .navbars ul li a {
+        padding: 1rem;
+    }
+
+    .navbars.active {
+        display: flex;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .content {
+        display: block;
+        margin-left: -1rem;
+    }
+
+    .left {
+        margin-left: 3rem;
+        margin-top: -1rem;
+    }
+
+    .left h2 {
+        font-size: 20px;
+        font-weight: lighter;
+        text-transform: uppercase;
+        margin-left: 2.5rem;
+        margin-right: -18rem;
+        margin-bottom: 0px;
+        color: #868a93;
+    }
+
+    .left p {
+        margin-left: 4rem;
+        margin-right: -16rem;
+        text-align: center;
+    }
+
+    .right {
+        position: relative;
+        text-align: center;
+        margin-top: 4rem;
+        margin-left: 8rem;
+        color: #090a0e;
+        /* padding-top: 2rem; */
+        width: 50%;
+    }
+}
